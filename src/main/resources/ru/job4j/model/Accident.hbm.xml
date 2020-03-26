@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping>
+    <class name="ru.job4j.police.model.Accident" table="accidents">
+        <id name="id" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name"/>
+        <property name="text" column="text"/>
+        <property name="address" column="address"/>
+    </class>
+</hibernate-mapping>
