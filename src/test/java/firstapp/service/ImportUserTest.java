@@ -2,6 +2,7 @@ package firstapp.service;
 
 import firstapp.models.User;
 import firstapp.store.MemoryStorage;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -11,6 +12,7 @@ import java.util.List;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
+@Ignore
 public class ImportUserTest {
 
     @Test
