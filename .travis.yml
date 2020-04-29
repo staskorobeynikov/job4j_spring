@@ -3,6 +3,12 @@ language: java
 jdk:
   - openjdk13
 
+services:
+  - postgresql
+
+before_install:
+  - psql -c 'create database police;' -U postgres
+
 # используем режим обычного пользователя для сборки проекта.
 sudo: false
 
